@@ -1,0 +1,103 @@
+/* 
+13293D Purssian Blue
+006494 Sapphire Blue 
+E8F1F2 Azure X11 Web Color
+247BA0 Celadon Blue
+1B98E0 Carloine Blue
+*/
+body {
+    font-size: 16px;
+    color: #006494;
+    background-color: #E8F1F2;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+#header-nav { /* default min height 50 */
+    background-color:#13293D;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0px;
+}
+.navbar-brand { /* default height 50, changed so it adjust to the h1 */
+    height: auto;
+}
+.navbar-brand h1 { /* Food, LLC */
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid white;
+}
+.navbar-header button.navbar-toggle {
+    /* clear: both; */ /* i want it to be in the same line as the h1 */
+    margin-top: 31px; /* to move the button down */
+}
+#nav-list {
+    margin-top: 10px; /* first margin in the collapsible menu */
+    margin-left: auto;
+    margin-right: auto;
+}
+#nav-list a {
+    color: white;
+}
+#nav-list a:hover {
+    background:#1B98E0;
+}
+.line {
+    margin: 0px;
+}
+
+/* END OF HEADER */
+
+/* ******************************************************************************************** */
+
+/* HOME PAGE */
+
+#our-menu {
+    margin: 20px auto 30px;
+    text-shadow: 1px 1px 1px #222;
+    font-size: 1.6em;
+}
+.menu-boxes {
+    background-color:lightskyblue;
+    color: black;
+    padding: 15px;
+    border: 1px solid black;
+    box-shadow: 0 1px 5px 1px #cccccc;
+    margin-bottom: 30px;
+}
+.menu-titles {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* END OF HOME PAGE */
+
+
+
+
+/* DESKTOP DEVICE (medium) */
+@media (min-width: 768px) {
+
+}
+
+/* TABLET DEVICE (small) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* MOBILE DEVICE (extra small) */
+@media (max-width: 575px) {
+
+}
+
+@media (min-width: 576px) { /* so the collapsible menu only shows at mobile view */
+    .navbar-toggle {
+        display: none;
+    }
+}
